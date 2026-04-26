@@ -16,6 +16,30 @@ WSL2 里的 OpenClaw 可以：
 
 ---
 
+## 🚀 一键部署
+
+**推荐方式**：克隆本仓库，在 WSL2 终端里跑一行命令，全部自动搞定。
+
+```bash
+# 克隆
+git clone https://github.com/llnnnl531/openclaw-wsl2-chrome-cdp.git
+cd openclaw-wsl2-chrome-cdp
+
+# 运行一键部署（WSL2 侧）
+bash setup-wsl2-chrome-cdp.sh
+```
+
+脚本会自动完成：
+1. 启动 Windows Chrome 调试实例
+2. 配置 Windows portproxy 转发
+3. 验证网络连通性
+4. 配置 OpenClaw browser profile
+5. 重启 OpenClaw gateway 并验证
+
+> 💡 **Windows 侧单独使用**（不想跑 WSL2 脚本）：直接双击 `start-chrome-debug.ps1`，自动完成 Chrome 启动 + portproxy + 防火墙配置。
+
+---
+
 ## 🗺️ 网络拓扑
 
 ```
